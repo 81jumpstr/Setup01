@@ -1,0 +1,51 @@
+/*	Theme Name: 	Setupshop
+   	Theme URI: 		http://localhost/Setupshop/
+   	Author: 		Lelethu Godongwana
+   	Description: 	For innovative initiatives
+   	Version: 		0.1 alpha
+   	Licence: 		https://www.gnu.org/licenses/gpl-2.0.html
+   	Tag: 			black, white, responsive, two-columns, three-columns, 
+   	     			featured-images, custom-menu, custom-header, post-formats
+*/
+
+body {
+	margin: 80px;
+	background: #fff;
+	font-family: 'Poiret One', cursive;
+   font-size: 20px;
+   background-color: #F5FFFA;
+}
+
+h1 {
+   float: left;
+	color: #00E5EE;
+}
+
+nav li {
+   float: right;
+   list-style: none;
+   padding: 20px;
+}
+
+div.navbar {
+   width: auto;
+   overflow: auto;
+   align: center;
+}
+
+/*img {
+   margin-top: 50px;
+   --margin-left: 40px; --
+   height: 500px;
+   width: 800px;
+}*/
+
+footer {
+   margin-top: 50px;
+   background-color: #C1CDCD;
+   height: 200px;
+}
+
+footer p {
+   padding: 20px;
+}
