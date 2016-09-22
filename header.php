@@ -48,3 +48,5 @@
     </div>
 
 <!--  <img src="http://Setupshop/wp-content/uploads/2016/09/SA.png" alt="sa-flags">  -->
+
+<?php dynamic_sidebar( 'Filters' ); ?>
