@@ -34,8 +34,8 @@
 
 <body <?php body_class(); ?>>
 
+  <div class="heading">
     <h1>Setupshop</h1>
-
     <div class="navbar">
       <nav>
         <ul>
@@ -46,7 +46,24 @@
         </ul>
       </nav>
     </div>
+   </div>
 
 <!--  <img src="http://Setupshop/wp-content/uploads/2016/09/SA.png" alt="sa-flags">  -->
 
-<?php dynamic_sidebar( 'Filters' ); ?>
+<!--<?php dynamic_sidebar( 'Filters' ); ?>-->
+
+<div class="container">
+  <section>
+  	<article id="desc">
+  	  <img id="image" alt="image">
+      <h2>Project list</h2>
+      <p>Project description...</p> 
+  	</article>
+
+    <article id="main">
+  	  <h2>Project Name</h2>
+  	  <p>About...</p>
+    </article>
+  </section>
+</div>
+
