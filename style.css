@@ -40,7 +40,7 @@ div.navbar {
    align: center;
 }
 
-#desc {
+.description {
    background-color: #fff;
    float: left;
    padding: 20px;
@@ -48,7 +48,7 @@ div.navbar {
    height: 200px;
 }
 
-#main {
+.main {
    overflow: auto;
    background-color: #fff;
    float: right;
@@ -56,13 +56,6 @@ div.navbar {
    width: 900px;
    height: 400px;
 }
-
-/*img {
-   margin-top: 50px;
-   --margin-left: 40px; --
-   height: 500px;
-   width: 800px;
-}*/
 
 footer {
    margin-top: 550px;
