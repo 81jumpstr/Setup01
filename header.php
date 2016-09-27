@@ -28,7 +28,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 
 
-	<?php wp_head(); ?>
+<?php wp_head(); ?>
 
 </head>
 
@@ -49,4 +49,19 @@
 
 <!--  <img src="http://Setupshop/wp-content/uploads/2016/09/SA.png" alt="sa-flags">  -->
 
-<?php dynamic_sidebar( 'Filters' ); ?>
+<!--<?php dynamic_sidebar( 'Filters' ); ?>-->
+
+<div class="container">
+   <section>
+   	<article class="description">
+   	  <img class="image" alt="image">
+       <h2>Project list</h2>
+       <p>Project description...</p> 
+   	</article>
+ 
+     <article class="main">
+   	  <h2>Project Name</h2>
+   	  <p>About...</p>
+     </article>
+   </section>
+ </div>
