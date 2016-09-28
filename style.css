@@ -16,9 +16,15 @@ body {
    background-color: #F5FFFA;
 }
 
+div.heading {
+   padding: 0 20px 20px 40px;
+   background-color: #ADD8E6;
+   margin-bottom: 50px;
+}
+
 h1 {
    float: left;
-	color: #00E5EE;
+	color: #1E90FF;
 }
 
 nav li {
@@ -33,17 +39,28 @@ div.navbar {
    align: center;
 }
 
-/*img {
-   margin-top: 50px;
-   --margin-left: 40px; --
-   height: 500px;
-   width: 800px;
-}*/
+.description {
+   background-color: #fff;
+   float: left;
+   padding: 20px;
+   width: 200px;
+   height: 200px;
+}
+
+.main {
+   overflow: auto;
+   background-color: #fff;
+   float: right;
+   padding: 20px;
+   width: 900px;
+   height: 400px;
+}
 
 footer {
-   margin-top: 50px;
+   margin-top: 550px;
    background-color: #C1CDCD;
    height: 200px;
+
 }
 
 footer p {
