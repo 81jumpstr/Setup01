@@ -9,11 +9,11 @@
 */
 
 body {
-	margin: 80px;
+	margin: 40px;
 	background: #fff;
 	font-family: 'Poiret One', cursive;
    font-size: 20px;
-   background-color: #F5FFFA;
+   background-color: #F0F8FF;
 }
 
 div.heading {
@@ -39,7 +39,12 @@ div.navbar {
    align: center;
 }
 
-.description {
+div.container {
+   border-color: black;
+}
+
+div.description {
+   clear: right;
    background-color: #fff;
    float: left;
    padding: 20px;
@@ -47,17 +52,18 @@ div.navbar {
    height: 200px;
 }
 
-.main {
+div.main {
    overflow: auto;
    background-color: #fff;
    float: right;
    padding: 20px;
-   width: 900px;
+   width: 800px;
    height: 400px;
+   margin-bottom: 50px;
 }
 
 footer {
-   margin-top: 550px;
+   clear: right;
    background-color: #C1CDCD;
    height: 200px;
 

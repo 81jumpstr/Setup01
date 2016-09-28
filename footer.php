@@ -1,9 +1,10 @@
-    <footer>
-      <p>This is our Footer, Here!</p>	
-    </footer>
-
-    <?php wp_footer(); ?>
-
   </body>
+
+  <?php wp_footer(); ?>
+
+  <footer>
+    <p>This is our Footer, Here!</p>	
+  </footer>
+
 
 </html>

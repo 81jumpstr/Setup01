@@ -33,17 +33,27 @@
   </head>
 
   <body <?php body_class(); ?>>
+    <div class="heading">
+      <h1>Setupshop</h1>
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li><a>Pop</a></li>
+            <li><a>Upskill</a></li>
+            <li><a>About</a></li>
+            <li><a>Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>  
 
-    <h1>Setupshop</h1>
-
-    <div class="navbar">
-      <nav>
-        <ul>
-          <li><a>Pop</a></li>
-          <li><a>Upskill</a></li>
-          <li><a>About</a></li>
-          <li><a>Home</a></li>
-        </ul>
-      </nav>
+    <div class="container">
+      <div class="description">
+        <h2>Project Name</h2>
+        <p>Description...</p>
+      </div>
+      <div class="main">
+        <h2>Project</h2>
+        <p>Specs...</p>
+      </div>
     </div>
-
