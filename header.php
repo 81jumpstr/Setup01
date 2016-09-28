@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Setupshop0.1</title>
+  <head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width">
+	  <title>Setupshop0.1</title>
 
 
 <!-- Google Fonts -->
@@ -30,9 +30,9 @@
 
 	<?php wp_head(); ?>
 
-</head>
+  </head>
 
-<body <?php body_class(); ?>>
+  <body <?php body_class(); ?>>
 
     <h1>Setupshop</h1>
 
@@ -47,6 +47,3 @@
       </nav>
     </div>
 
-<!--  <img src="http://Setupshop/wp-content/uploads/2016/09/SA.png" alt="sa-flags">  -->
-
-<?php dynamic_sidebar( 'Filters' ); ?>
