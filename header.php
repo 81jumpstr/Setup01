@@ -3,6 +3,7 @@
   <head>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width">
+    <img src="C:\Bitnami\wampstack-5.6.25-0\apache2\htdocs\Setupshop\wp-content\uploads\2016\09">
 	  <title>Setupshop0.1</title>
 
 

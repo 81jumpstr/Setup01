@@ -9,11 +9,16 @@
 */
 
 body {
-	margin: 40px;
-	background: #fff;
+   margin: 40px;
 	font-family: 'Poiret One', cursive;
    font-size: 20px;
    background-color: #F0F8FF;
+}
+
+img {
+     background-image: url("ghettomunda.jpg");
+     background-size: cover;
+     display: inline-block;
 }
 
 div.heading {
