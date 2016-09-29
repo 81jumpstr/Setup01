@@ -15,11 +15,11 @@ html {
 body {
    padding: 4rem;
 	font-family: 'Poiret One', cursive;
-   font-size: 20px;
+   font-size: 2rem;
    background-color: #F0F8FF;
 }
 
-div.heading {
+.heading {
    padding: 0 2rem 2rem 4rem;
    background-color: #ADD8E6;
    margin-bottom: 5rem;
@@ -36,39 +36,39 @@ nav li {
    padding: 2rem;
 }
 
-div.navbar {
+.navbar {
    width: auto;
    overflow: auto;
    align: center;
 }
 
-div.container {
+.container {
    border-color: black;
 }
 
-div.description {
+.description {
    clear: right;
    background-color: #fff;
    float: left;
    padding: 2em;
-   width: 200px;
-   height: 200px;
+   width: 20rem;
+   height: 20rem;
 }
 
-div.main {
+.main {
    overflow: auto;
    background-color: #fff;
    float: right;
    padding: 2em;
-   width: 800px;
-   height: 400px;
+   width: 80rem;
+   height: 40rem;
    margin-bottom: 5em;
 }
 
 footer {
    clear: right;
    background-color: #C1CDCD;
-   height: 200px;
+   height: 20rem;
 
 }
 
