@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Setupshop0.1</title>
+  <head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width">
+	  <title>Setupshop0.1</title>
 
 
 <!-- Google Fonts -->
@@ -30,22 +30,34 @@
 
 <?php wp_head(); ?>
 
-</head>
+  </head>
 
-<body <?php body_class(); ?>>
+  <body <?php body_class(); ?>>
+    <div class="heading">
+      <h1>Setupshop</h1>
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li><a>Pop</a></li>
+            <li><a>Upskill</a></li>
+            <li><a>About</a></li>
+            <li><a>Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>  
 
-    <h1>Setupshop</h1>
-
-    <div class="navbar">
-      <nav>
-        <ul>
-          <li><a>Pop</a></li>
-          <li><a>Upskill</a></li>
-          <li><a>About</a></li>
-          <li><a>Home</a></li>
-        </ul>
-      </nav>
+    <div class="container">
+      <div class="description">
+        <h2>Project Name</h2>
+        <p>Description...</p>
+      </div>
+      <div class="main">
+        <h2>Project</h2>
+        <p>Specs...</p>
+      </div>
     </div>
+<<<<<<< HEAD
 
 <!--  <img src="http://Setupshop/wp-content/uploads/2016/09/SA.png" alt="sa-flags">  -->
 
@@ -65,3 +77,5 @@
      </article>
    </section>
  </div>
+=======
+>>>>>>> markup

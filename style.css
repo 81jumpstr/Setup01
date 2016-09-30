@@ -9,16 +9,27 @@
 */
 
 body {
-	margin: 80px;
-	background: #fff;
-	font-family: 'Poiret One', cursive;
+   margin: 40px;
+   font-family: 'Poiret One', cursive;
    font-size: 20px;
-   background-color: #F5FFFA;
+   background-color: #F0F8FF;
+}
+
+img {
+   background-image: url("ghettomunda.jpg");
+   background-size: cover;
+   display: inline-block;
+}
+
+div.heading {
+   padding: 0 20px 20px 40px;
+   background-color: #ADD8E6;
+   margin-bottom: 50px;
 }
 
 h1 {
    float: left;
-	color: #00E5EE;
+   color: #1E90FF;
 }
 
 nav li {
@@ -33,17 +44,34 @@ div.navbar {
    align: center;
 }
 
-/*img {
-   margin-top: 50px;
-   --margin-left: 40px; --
-   height: 500px;
+div.container {
+   border-color: black;
+}
+
+div.description {
+   clear: right;
+   background-color: #fff;
+   float: left;
+   padding: 20px;
+   width: 200px;
+   height: 200px;
+}
+
+div.main {
+   overflow: auto;
+   background-color: #fff;
+   float: right;
+   padding: 20px;
    width: 800px;
-}*/
+   height: 400px;
+   margin-bottom: 50px;
+}
 
 footer {
-   margin-top: 50px;
+   clear: right;
    background-color: #C1CDCD;
    height: 200px;
+
 }
 
 footer p {
