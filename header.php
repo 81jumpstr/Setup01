@@ -47,6 +47,7 @@
       </div>
     </div>  
 
+<<<<<<< HEAD
     <div class="container">
       <div class="description">
         <h2>Project Name</h2>
@@ -58,12 +59,28 @@
       </div>
     </div>
 <<<<<<< HEAD
+=======
+  <div class="heading">
+    <h1>Setupshop</h1>
+    <div class="navbar">
+      <nav>
+        <ul>
+          <li><a>Pop</a></li>
+          <li><a>Upskill</a></li>
+          <li><a>About</a></li>
+          <li><a>Home</a></li>
+        </ul>
+      </nav>
+    </div>
+   </div>
+>>>>>>> markupstyle
 
 <!--  <img src="http://Setupshop/wp-content/uploads/2016/09/SA.png" alt="sa-flags">  -->
 
 <!--<?php dynamic_sidebar( 'Filters' ); ?>-->
 
 <div class="container">
+<<<<<<< HEAD
    <section>
    	<article class="description">
    	  <img class="image" alt="image">
@@ -79,3 +96,19 @@
  </div>
 =======
 >>>>>>> markup
+=======
+  <section>
+  	<article id="desc">
+  	  <img id="image" alt="image">
+      <h2>Project list</h2>
+      <p>Project description...</p> 
+  	</article>
+
+    <article id="main">
+  	  <h2>Project Name</h2>
+  	  <p>About...</p>
+    </article>
+  </section>
+</div>
+
+>>>>>>> markupstyle
