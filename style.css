@@ -13,24 +13,6 @@ html {
 }
 
 body {
-<<<<<<< HEAD
-   margin: 40px;
-   font-family: 'Poiret One', cursive;
-   font-size: 20px;
-   background-color: #F0F8FF;
-}
-
-img {
-   background-image: url("ghettomunda.jpg");
-   background-size: cover;
-   display: inline-block;
-}
-
-div.heading {
-   padding: 0 20px 20px 40px;
-   background-color: #ADD8E6;
-   margin-bottom: 50px;
-=======
    padding: 4rem;
 	font-family: 'Poiret One', cursive;
    font-size: 2rem;
@@ -41,16 +23,11 @@ div.heading {
    padding: 0 2rem 2rem 4rem;
    background-color: #ADD8E6;
    margin-bottom: 5rem;
->>>>>>> markupstyle
 }
 
 h1 {
    float: left;
-<<<<<<< HEAD
-   color: #1E90FF;
-=======
 	color: #1E90FF;
->>>>>>> markupstyle
 }
 
 nav li {
@@ -70,24 +47,6 @@ div.container {
    border-color: black;
 }
 
-div.description {
-   clear: right;
-   background-color: #fff;
-   float: left;
-   padding: 20px;
-   width: 200px;
-   height: 200px;
-}
-
-div.main {
-   overflow: auto;
-   background-color: #fff;
-   float: right;
-   padding: 20px;
-   width: 800px;
-   height: 400px;
-   margin-bottom: 50px;
-=======
 .container {
    border-color: black;
 }
@@ -109,18 +68,12 @@ div.main {
    width: 80rem;
    height: 40rem;
    margin-bottom: 5em;
->>>>>>> markupstyle
 }
 
 footer {
    clear: right;
    background-color: #C1CDCD;
-<<<<<<< HEAD
-   height: 200px;
-=======
    height: 20rem;
->>>>>>> markupstyle
-
 }
 
 footer p {
