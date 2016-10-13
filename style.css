@@ -13,7 +13,7 @@ html {
 }
 
 body {
-   padding: 4rem;
+   margin: 4rem;
    font-size: 2rem;
    background-color: #F5FFFA;
    font-family: 'Loved by the King', cursive;
@@ -35,6 +35,8 @@ ul li {
    font-family: 'Over the Rainbow';
    color: #000;
    float: right;
+   clear: right;
+   clear: left;
    display: inline;
    padding: 2rem;
    font-size: 2rem;
@@ -58,8 +60,7 @@ a {
 .main {
    overflow: hidden;
    background-color: #fff;
-   float: right;
-   clear: left;     
+   float: right;     
    margin: 4rem 0 4rem 0;
    padding-left: 4rem;
    width: 80rem;
