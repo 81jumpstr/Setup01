@@ -57,6 +57,10 @@ a {
    font-size: 2rem;
 }
 
+#sidebar{
+   background-color: gray;
+}
+
 ul li {
    font-family: 'Over the Rainbow';
    float: right;
