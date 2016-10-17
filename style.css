@@ -31,23 +31,44 @@ h1 {
 	color: #1E90FF;
 }
 
-ul li {
-   font-family: 'Over the Rainbow';
-   color: #000;
-   float: right;
-   clear: right;
-   clear: left;
-   display: inline;
-   padding: 2rem;
-   font-size: 2rem;
-}
-
 a {
    list-style: none;
    text-decoration: none;
 }
 
-.description {
+.menu {
+   padding: 2rem;
+   list-style: none;
+   text-decoration: none;
+}
+
+.menu a {
+   list-style: none;
+   text-decoration: none;
+}
+
+
+
+.page_item a {
+   padding: 1rem;
+}
+
+#sidebar h2 {
+   font-size: 2rem;
+}
+
+ul li {
+   font-family: 'Over the Rainbow';
+   float: right;
+   color: #000;
+   display: inline;
+   /*padding: 2rem;
+   font-size: 2rem;
+   clear: left;
+   clear: right;*/
+}
+
+/*.description {
    background-color: #fff;
    float: left;
    clear: right;   
@@ -55,9 +76,9 @@ a {
    padding-left: 4rem;
    width: 30rem;
    height: 25rem;
-}
+}*/
 
-.main {
+p {
    overflow: hidden;
    background-color: #fff;
    float: right;     
@@ -67,12 +88,13 @@ a {
    height: 40rem;
 }
 
-footer {
-   clear: right;
+footer p{
+   /*clear: right;*/
    background-color: #C1CDCD;
    height: 20rem;
-}
-
-footer p {
    padding: 2rem;
 }
+
+/*footer p {
+   padding: 2rem;
+}*/
