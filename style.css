@@ -16,89 +16,56 @@ body {
    margin: 4rem;
    font-size: 2rem;
    background-color: #F5FFFA;
-   font-family: 'Loved by the King', cursive;
+   font-family: 'Open Sans', sans-serif;
 }
-
-.heading {
-   padding: 0 2rem 2rem 4rem;
- }
 
 h1 {
    font-family: 'Over the Rainbow';
-   float: left;
-   clear: right;
    overflow: hidden;
-	color: #1E90FF;
+   color: #1E90FF;
 }
 
 a {
-   list-style: none;
+   list-style-type: none;
    text-decoration: none;
 }
 
-.menu {
+.menu li {
    padding: 2rem;
-   list-style: none;
+   list-style-type: none;
    text-decoration: none;
-}
-
-.menu a {
-   list-style: none;
-   text-decoration: none;
-}
-
-
-
-.page_item a {
-   padding: 1rem;
+   float: right;
+   display: inline;
 }
 
 #sidebar h2 {
-   font-size: 2rem;
+   font-size: 1.5rem;
 }
 
-#sidebar{
-   background-color: gray;
+#sidebar {
+   background-color: #FFE4C4;
+   padding: 2rem 0;
 }
 
-ul li {
-   font-family: 'Over the Rainbow';
-   float: right;
+nav ul li {
+   font-family: 'Open Sans', sans-serif;
    color: #000;
    display: inline;
-   /*padding: 2rem;
-   font-size: 2rem;
-   clear: left;
-   clear: right;*/
 }
 
-/*.description {
-   background-color: #fff;
-   float: left;
-   clear: right;   
-   margin: 4rem 0 4rem 0;
-   padding-left: 4rem;
-   width: 30rem;
-   height: 25rem;
-}*/
-
 p {
-   overflow: hidden;
+   align: center;
+   list-style-type: none;
+   overflow: none;
    background-color: #fff;
-   float: right;     
-   margin: 4rem 0 4rem 0;
-   padding-left: 4rem;
-   width: 80rem;
-   height: 40rem;
+   margin: 4rem 0;
+   padding: 6rem;
+   width: 50rem;
+   height: 50rem;
 }
 
 footer p{
-   /*clear: right;*/
    background-color: #C1CDCD;
    height: 20rem;
    padding: 2rem;
 }
-
-/*footer p {
-   padding: 2rem;
-}*/

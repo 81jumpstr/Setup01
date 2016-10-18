@@ -8,6 +8,7 @@
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Loved+by+the+King|Pontano+Sans|Wire+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Over+the+Rainbow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     
     <?php wp_head(); ?>
 
