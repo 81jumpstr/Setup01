@@ -20,6 +20,7 @@ body {
 }
 
 h1 {
+   position: relative;
    font-family: 'Over the Rainbow';
    overflow: hidden;
    color: #1E90FF;
@@ -30,12 +31,27 @@ a {
    text-decoration: none;
 }
 
+.menu li a:hover {
+   background-color: #FFFFAA;
+   padding: 6rem;
+}
+
 .menu li {
+   overflow: hidden;
    padding: 2rem;
    list-style-type: none;
    text-decoration: none;
    float: right;
+   clear: left; /*   clear the left of menu, can't find the class/id of main content   */
    display: inline;
+   font-size: 1.5rem;
+   margin-bottom: 4rem; /*   space between main content   */
+   position: relative;
+   /*background-size: 4rem;*/
+}
+
+.menu-item-40 {
+   color: #000;
 }
 
 #sidebar h2 {
@@ -43,8 +59,10 @@ a {
 }
 
 #sidebar {
-   background-color: #FFE4C4;
+   background-color: #FFFFAA;
    padding: 2rem 0;
+   overflow: hidden;
+   font-size: 1.25rem;
 }
 
 nav ul li {
@@ -54,7 +72,7 @@ nav ul li {
 }
 
 p {
-   align: center;
+   clear: right;
    list-style-type: none;
    overflow: none;
    background-color: #fff;
@@ -62,9 +80,11 @@ p {
    padding: 6rem;
    width: 50rem;
    height: 50rem;
+   font-size: 1.5rem;
 }
 
-footer p{
+footer p {
+   position: relative;
    background-color: #C1CDCD;
    height: 20rem;
    padding: 2rem;
