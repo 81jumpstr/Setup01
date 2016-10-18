@@ -33,7 +33,7 @@ a {
 
 .menu li a:hover {
    background-color: #FFFFAA;
-   padding: 6rem;
+   padding: 4rem;
 }
 
 .menu li {
@@ -50,10 +50,6 @@ a {
    /*background-size: 4rem;*/
 }
 
-.menu-item-40 {
-   color: #000;
-}
-
 #sidebar h2 {
    font-size: 1.5rem;
 }
@@ -67,7 +63,6 @@ a {
 
 nav ul li {
    font-family: 'Open Sans', sans-serif;
-   color: #000;
    display: inline;
 }
 
