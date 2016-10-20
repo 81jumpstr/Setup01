@@ -20,10 +20,11 @@ body {
 }
 
 h1 {
-   position: relative;
    font-family: 'Over the Rainbow';
-   overflow: hidden;
    color: #1E90FF;
+   float: left;
+   width: 20rem;
+   position: absolute;
 }
 
 a {
@@ -31,21 +32,29 @@ a {
    text-decoration: none;
 }
 
+/*.menu-navmain-container {
+   margin-top: 20rem;
+}*/
+
 .menu li a:hover {
    background-color: #FFFFAA;
    padding: 4rem;
 }
 
+.menu li a {
+   color: #000;
+}
+
 .menu li {
-   overflow: hidden;
+   /*overflow: hidden;*/
    padding: 2rem;
    list-style-type: none;
    text-decoration: none;
    float: right;
-   clear: left; /*   clear the left of menu, can't find the class/id of main content   */
+   /*clear: left;    clear the left of menu, can't find the class/id of main content   */
    display: inline;
    font-size: 1.5rem;
-   margin-bottom: 4rem; /*   space between main content   */
+   /*margin-bottom: 4rem;    space between main content   */
    position: relative;
    /*background-size: 4rem;*/
 }
@@ -59,6 +68,21 @@ a {
    padding: 2rem 0;
    overflow: hidden;
    font-size: 1.25rem;
+   width: 37rem;
+}
+
+#sidebar ul {
+   list-style-type: none;
+}
+
+#sidebar li a:hover {
+   background-color: #fff;
+}
+
+#sidebar li a {
+   background-size: 2rem;
+   padding: 0.5rem;
+   color: #000;
 }
 
 nav ul li {
@@ -67,7 +91,6 @@ nav ul li {
 }
 
 p {
-   clear: right;
    list-style-type: none;
    overflow: none;
    background-color: #fff;
@@ -83,4 +106,5 @@ footer p {
    background-color: #C1CDCD;
    height: 20rem;
    padding: 2rem;
+   width: auto;
 }
