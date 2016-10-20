@@ -19,13 +19,13 @@ body {
    font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
+/*h1 {
    font-family: 'Over the Rainbow';
    color: #1E90FF;
    float: left;
    width: 20rem;
    position: absolute;
-}
+}*/
 
 a {
    list-style-type: none;
