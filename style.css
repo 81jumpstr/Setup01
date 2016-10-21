@@ -13,19 +13,20 @@ html {
 }
 
 body {
-   margin: 4rem;
+   padding: 0 4rem;
    font-size: 2rem;
    background-color: #F5FFFA;
    font-family: 'Open Sans', sans-serif;
 }
 
-/*h1 {
+h1 {
    font-family: 'Over the Rainbow';
    color: #1E90FF;
    float: left;
+   clear: right;
    width: 20rem;
    position: absolute;
-}*/
+}
 
 a {
    list-style-type: none;
@@ -45,9 +46,13 @@ a {
    color: #000;
 }
 
+.menu {
+   padding-top: 4rem;
+}
+
 .menu li {
    /*overflow: hidden;*/
-   padding: 2rem;
+   padding: 2rem;  /* wrong way... should simply follow order */
    list-style-type: none;
    text-decoration: none;
    float: right;
@@ -57,6 +62,7 @@ a {
    /*margin-bottom: 4rem;    space between main content   */
    position: relative;
    /*background-size: 4rem;*/
+   margin-bottom: 10rem; /* wrong way... should simply follow order */
 }
 
 #sidebar h2 {
@@ -69,6 +75,9 @@ a {
    overflow: hidden;
    font-size: 1.25rem;
    width: 37rem;
+   float: right;
+   clear: left;
+   margin-bottom: 4rem;
 }
 
 #sidebar ul {
@@ -92,13 +101,15 @@ nav ul li {
 
 p {
    list-style-type: none;
-   overflow: none;
+   overflow: hidden;
    background-color: #fff;
    margin: 4rem 0;
    padding: 6rem;
    width: 50rem;
-   height: 50rem;
+   height: 20rem;
    font-size: 1.5rem;
+   color: #000;
+   clear: right;
 }
 
 footer p {
@@ -107,4 +118,5 @@ footer p {
    height: 20rem;
    padding: 2rem;
    width: auto;
+   color: #000;
 }
