@@ -41,4 +41,5 @@
         <!--<p>A community is commonly considered a social unit (a group of people) who share something in common, such as norms, values, identity, and often a sense of place that is situated in a given geographical area (e.g. a village, town, or neighborhood). Durable relations that extend beyond immediate genealogical ties also define a sense of community. People tend to define those social ties as important to their identity, practice, and roles in social institutions like family, home, work, government, society, or humanity, at large.[1][2][3] Although communities are usually small relative to personal social ties (micro-level), "community" may also refer to large group affiliations (or macro-level), such as national communities, international communities, and virtual communities.</p>-->
       </div>
     </div>
+    
 
