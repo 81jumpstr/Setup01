@@ -12,11 +12,11 @@
     
     <?php wp_head(); ?>
 
-
   </head>
 
   <body <?php body_class(); ?>>
-
-    <h1>Setupshop</h1>
-
-    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+    
+    <section id='header'>
+      <h1>Setupshop</h1>
+      <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+    </section>
