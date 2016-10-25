@@ -10,21 +10,38 @@
 
 html {
    font-size: 62.5%;
+   height: 100%;
 }
 
 body {
-   margin: 4rem;
+   padding: 0 4rem;
    font-size: 2rem;
    background-color: #F5FFFA;
    font-family: 'Open Sans', sans-serif;
+   /*-webkit-column-count: 2;
+   -webkit-column-gap: 4rem;
+   -webkit-column-rule-style: solid;
+   -webkit-column-rule-width: 1px;
+   -webkit-column-rule-color: #000;
+   -webkit-column-rule: 1px solid #000;*/
+}
+
+section #header {
+   background-color: #fff;
+   margin-bottom: 4rem 0;
 }
 
 h1 {
    font-family: 'Over the Rainbow';
    color: #1E90FF;
    float: left;
-   width: 20rem;
-   position: absolute;
+   position: relative;
+   height: 0 auto !important;
+   width: 0 auto !important;
+   margin: auto !important;
+   padding-left: 3rem;
+   /*-webkit-column-span: all;*/
+
 }
 
 a {
@@ -32,13 +49,9 @@ a {
    text-decoration: none;
 }
 
-/*.menu-navmain-container {
-   margin-top: 20rem;
-}*/
-
 .menu li a:hover {
    background-color: #FFFFAA;
-   padding: 4rem;
+   padding: 3rem;
 }
 
 .menu li a {
@@ -47,16 +60,17 @@ a {
 
 .menu li {
    /*overflow: hidden;*/
-   padding: 2rem;
+   padding: 2rem;  /* wrong way... should simply follow order */
    list-style-type: none;
    text-decoration: none;
    float: right;
-   /*clear: left;    clear the left of menu, can't find the class/id of main content   */
+   /*clear: left;    clear the left of menu, can't find the wp class/id of main content   */
    display: inline;
    font-size: 1.5rem;
-   /*margin-bottom: 4rem;    space between main content   */
-   position: relative;
-   /*background-size: 4rem;*/
+   margin-bottom: 10rem; /* wrong way... should simply follow order */
+   height: 4rem !important;
+   width: auto !important;
+   border-bottom: 1px solid #dfdfdf;
 }
 
 #sidebar h2 {
@@ -66,9 +80,12 @@ a {
 #sidebar {
    background-color: #FFFFAA;
    padding: 2rem 0;
-   overflow: hidden;
+   overflow: none;
    font-size: 1.25rem;
-   width: 37rem;
+   width: 37rem !important;
+   margin: 4rem 0;
+   /*float: right;*/
+   clear: left;
 }
 
 #sidebar ul {
@@ -92,13 +109,22 @@ nav ul li {
 
 p {
    list-style-type: none;
-   overflow: none;
+   overflow: hidden;
    background-color: #fff;
-   margin: 4rem 0;
+   /*margin: 4rem 0;*/
    padding: 6rem;
    width: 50rem;
-   height: 50rem;
+   height: 20rem;
    font-size: 1.5rem;
+   color: #000;
+   clear: right;
+   margin: 0 !important;
+}
+
+section p {
+   width: 50%;
+   margin: 0 !important;
+
 }
 
 footer p {
@@ -107,4 +133,5 @@ footer p {
    height: 20rem;
    padding: 2rem;
    width: auto;
+   color: #000;
 }
