@@ -37,6 +37,7 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 ?>
+<<<<<<< HEAD
 
 <?php
 add_filter( 'wp_title', 'wpdocs_hack_wp_title_for_home' );
@@ -55,3 +56,4 @@ function wpdocs_hack_wp_title_for_home( $title )
   return $title;
 }
 ?>
+
