@@ -38,9 +38,9 @@ function register_my_menu() {
 add_action( 'init', 'register_my_menu' );
 ?>
 
-<?php
+<!--<?php
 add_filter( 'wp_title', 'wpdocs_hack_wp_title_for_home' );
- 
+
 /**
  * Customize the title for the home page, if one is not set.
  *
@@ -55,3 +55,4 @@ function wpdocs_hack_wp_title_for_home( $title )
   return $title;
 }
 ?>
+-->
