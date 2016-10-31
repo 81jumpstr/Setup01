@@ -1,15 +1,18 @@
 <?php 
-
 get_header();
-
-if (have_posts()) :
-   while (have_posts()) :
-      the_post();
-         the_content();
-   endwhile;
-endif;
-
 get_sidebar();
-get_footer();
+if ( have_posts() ) : 
+?>
 
+  <ul>
+    <?php while ( have_posts() ) : the_post(); ?>
+	  <li>
+	    <?php the_content(); ?>
+	  </li>
+    <?php endwhile; ?>
+  </ul>
+
+<?php
+  endif;
+  get_footer();
 ?>
