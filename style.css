@@ -14,34 +14,28 @@ html {
 }
 
 body {
-   padding: 0 4rem;
    font-size: 2rem;
-   background-color: #F5FFFA;
+   background-color: #EEEEE0;
    font-family: 'Open Sans', sans-serif;
-   /*-webkit-column-count: 2;
-   -webkit-column-gap: 4rem;
-   -webkit-column-rule-style: solid;
-   -webkit-column-rule-width: 1px;
-   -webkit-column-rule-color: #000;
-   -webkit-column-rule: 1px solid #000;*/
 }
 
-section #header {
+header.site-header {
    background-color: #fff;
-   margin-bottom: 4rem 0;
+   position: relative;
+   width: 100%;
+   height: 8rem;
 }
 
-h1 {
-   font-family: 'Over the Rainbow';
-   color: #1E90FF;
-   float: left;
+.site-header h1 {
+   float: left !important;
+   font-family: 'Over the Rainbow' !important;
+   color: #1E90FF !important;
    position: relative;
    height: 0 auto !important;
    width: 0 auto !important;
-   margin: auto !important;
+   margin-left: 1rem;
    padding-left: 3rem;
-   /*-webkit-column-span: all;*/
-
+   font-size: 2rem !important;
 }
 
 a {
@@ -51,26 +45,32 @@ a {
 
 .menu li a:hover {
    background-color: #FFFFAA;
-   padding: 3rem;
+   color: #000;
+   padding: 2rem;
 }
 
 .menu li a {
-   color: #000;
+   color: #555555;
+}
+
+.menu ul {
+   margin: 0 2rem;
+
 }
 
 .menu li {
-   /*overflow: hidden;*/
-   padding: 2rem;  /* wrong way... should simply follow order */
+   padding: 1rem 3rem;
    list-style-type: none;
    text-decoration: none;
    float: right;
-   /*clear: left;    clear the left of menu, can't find the wp class/id of main content   */
    display: inline;
    font-size: 1.5rem;
-   margin-bottom: 10rem; /* wrong way... should simply follow order */
-   height: 4rem !important;
+   margin-top: 1.8rem;
+   height: 1.5rem !important;
    width: auto !important;
-   border-bottom: 1px solid #dfdfdf;
+   /*border-left: 1px solid #dfdfdf;*/
+   padding: 2rem
+   background-color: #8B8989;
 }
 
 #sidebar h2 {
@@ -79,17 +79,18 @@ a {
 
 #sidebar {
    background-color: #FFFFAA;
+   color: #555555;
    padding: 2rem 0;
    overflow: none;
    font-size: 1.25rem;
    width: 37rem !important;
-   margin: 4rem 0;
-   /*float: right;*/
-   clear: left;
+   margin: 12rem 0 4rem 4rem;
+   float: left;
 }
 
 #sidebar ul {
    list-style-type: none;
+   color: #555555;
 }
 
 #sidebar li a:hover {
@@ -99,39 +100,73 @@ a {
 #sidebar li a {
    background-size: 2rem;
    padding: 0.5rem;
-   color: #000;
+   color: #555555;;
 }
 
-nav ul li {
+ul li {
    font-family: 'Open Sans', sans-serif;
    display: inline;
+   list-style-type: none;
 }
 
-p {
+ul li p {
    list-style-type: none;
+   text-decoration: none;
    overflow: hidden;
    background-color: #fff;
-   /*margin: 4rem 0;*/
    padding: 6rem;
-   width: 50rem;
-   height: 20rem;
+   margin: 12rem 4rem 0 0;
+   width: 50%;
    font-size: 1.5rem;
-   color: #000;
-   clear: right;
-   margin: 0 !important;
+   color: #555555;
+   float: right;
+   border-bottom: 1px solid #dfdfdf;
+   /*margin-right: 4rem !important;*/
 }
 
-section p {
-   width: 50%;
-   margin: 0 !important;
-
+/*footer {
+   width: auto !important;
 }
 
 footer p {
-   position: relative;
    background-color: #C1CDCD;
    height: 20rem;
    padding: 2rem;
-   width: auto;
    color: #000;
+}*/
+
+.read-more-state {
+  display: none;
+}
+
+span.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap span.read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 2rem;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+label.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: .1rem 2rem;
+  color: #000;
+  font-size: inherit;
+  border: 1px solid #dfdfdf;
+  border-radius: .5rem;
+  background-color: #0EBFE9;
 }

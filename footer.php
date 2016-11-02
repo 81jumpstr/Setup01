@@ -1,9 +1,9 @@
 
       <?php wp_footer(); ?>
 
-    <footer>
+    <!--<footer>
       <p>This is our Footer, Here!</p>	
-    </footer>
+    </footer>-->
 
   </body>
 
