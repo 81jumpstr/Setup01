@@ -15,15 +15,18 @@ html {
 
 body {
    font-size: 2rem;
-   background-color: #EEEEE0;
    font-family: 'Open Sans', sans-serif;
+   background-image: url('http://Setupshop/wp-content/uploads/2016/10/print011.jpg');
+   opacity: .9;
 }
 
-header.site-header {
+.site-header {
    background-color: #fff;
-   position: relative;
-   width: 100%;
+   position: fixed;
+   opacity: 1;
+   width: 92.9%;
    height: 8rem;
+   margin: 0 4rem;
 }
 
 .site-header h1 {
@@ -50,16 +53,16 @@ a {
 }
 
 .menu li a {
-   color: #555555;
+   color: #000;
 }
 
 .menu ul {
-   margin: 0 2rem;
-
+   margin: .2rem 1rem 2rem 0;
+   padding: 0 4rem 2rem 0;
 }
 
 .menu li {
-   padding: 1rem 3rem;
+   padding: 1rem 4rem;
    list-style-type: none;
    text-decoration: none;
    float: right;
@@ -68,9 +71,7 @@ a {
    margin-top: 1.8rem;
    height: 1.5rem !important;
    width: auto !important;
-   /*border-left: 1px solid #dfdfdf;*/
-   padding: 2rem
-   background-color: #8B8989;
+   padding-right: 1rem;
 }
 
 #sidebar h2 {
@@ -78,13 +79,14 @@ a {
 }
 
 #sidebar {
+   opacity: 1;
    background-color: #FFFFAA;
    color: #555555;
    padding: 2rem 0;
    overflow: none;
    font-size: 1.25rem;
    width: 37rem !important;
-   margin: 12rem 0 4rem 4rem;
+   margin: 10rem 0 4rem 4rem;
    float: left;
 }
 
@@ -115,13 +117,12 @@ ul li p {
    overflow: hidden;
    background-color: #fff;
    padding: 6rem;
-   margin: 12rem 4rem 0 0;
+   margin: 10.22rem 4rem 0 0;
    width: 50%;
    font-size: 1.5rem;
    color: #555555;
    float: right;
    border-bottom: 1px solid #dfdfdf;
-   /*margin-right: 4rem !important;*/
 }
 
 /*footer {
@@ -139,7 +140,7 @@ footer p {
   display: none;
 }
 
-span.read-more-target {
+.read-more-target {
   opacity: 0;
   max-height: 0;
   font-size: 0;
@@ -160,7 +161,7 @@ span.read-more-target {
   content: 'Show less';
 }
 
-label.read-more-trigger {
+.read-more-trigger {
   cursor: pointer;
   display: inline-block;
   padding: .1rem 2rem;
