@@ -34,8 +34,8 @@ body {
    font-family: 'Over the Rainbow' !important;
    color: #1E90FF !important;
    position: relative;
-   height: 0 auto !important;
-   width: 0 auto !important;
+   height: 0 auto;
+   width: 0 auto;
    margin-left: 1rem;
    padding-left: 3rem;
    font-size: 2rem !important;
@@ -69,8 +69,8 @@ a {
    display: inline;
    font-size: 1.5rem;
    margin-top: 1.8rem;
-   height: 1.5rem !important;
-   width: auto !important;
+   height: 1.5rem;
+   width: auto;
    padding-right: 1rem;
 }
 
@@ -85,7 +85,7 @@ a {
    padding: 2rem 0;
    overflow: none;
    font-size: 1.25rem;
-   width: 37rem !important;
+   width: 37rem;
    margin: 10rem 0 4rem 4rem;
    float: left;
 }
@@ -109,16 +109,16 @@ ul li {
    font-family: 'Open Sans', sans-serif;
    display: inline;
    list-style-type: none;
+   text-decoration: none;
 }
 
 ul li p {
-   list-style-type: none;
    text-decoration: none;
    overflow: hidden;
    background-color: #fff;
    padding: 6rem;
    margin: 10.22rem 4rem 0 0;
-   width: 50%;
+   width: 55%;
    font-size: 1.5rem;
    color: #555555;
    float: right;
