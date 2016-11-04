@@ -102,7 +102,12 @@ a {
 #sidebar li a {
    background-size: 2rem;
    padding: 0.5rem;
-   color: #555555;;
+   color: #555555;
+   display: inline-block;
+}
+
+ul {
+   overflow: auto;
 }
 
 ul li {
@@ -125,7 +130,7 @@ ul li p {
    border-bottom: 1px solid #dfdfdf;
 }
 
-/*footer {
+footer {
    width: auto !important;
 }
 
@@ -134,7 +139,7 @@ footer p {
    height: 20rem;
    padding: 2rem;
    color: #000;
-}*/
+}
 
 .read-more-state {
   display: none;
