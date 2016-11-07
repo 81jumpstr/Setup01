@@ -3,14 +3,17 @@ get_header();
 get_sidebar();
 if ( have_posts() ) : 
 ?>
-
-  <ul>
-    <?php while ( have_posts() ) : the_post(); ?>
-	  <li>
-	    <?php the_content(); ?>
-	  </li>
-    <?php endwhile; ?>
-  </ul>
+  <div class='post-section'>
+	  <ul>
+	      <div class='single-post'>
+		    <?php while ( have_posts() ) : the_post(); ?>
+			  <li>
+			    <?php the_content(); ?>
+			  </li>
+		    <?php endwhile; ?>
+		  </div>  
+	  </ul>
+  </div>
 
 <?php
   endif;
