@@ -129,7 +129,7 @@ a {
    border-bottom: 1px solid #dfdfdf;
 }
 
-ul .single-post li p {
+.single-post p {
   /*margin: 4rem 0;*/
   padding: 4rem;
   border-bottom: .1rem solid #555555;
