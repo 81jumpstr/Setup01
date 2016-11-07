@@ -16,14 +16,13 @@ html {
 body {
    font-size: 2rem;
    font-family: 'Open Sans', sans-serif;
-   background-image: url('/images/print011.jpg');
+   background-image: url('images/print011.jpg');
    opacity: 0.9;
 }
 
 .site-header {
    background-color: #fff;
    position: fixed;
-   /*top: 0;*/
    width: 92.9%;
    height: 8rem;
    margin: 0 4rem;
