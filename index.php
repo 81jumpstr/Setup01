@@ -1,19 +1,24 @@
-<?php 
-get_header();
-get_sidebar();
-if ( have_posts() ) : 
-?>
-  <div class='post-section'>
-	  <ul>   
-	    <?php while ( have_posts() ) : the_post(); ?>
-		  <li class='single-post'>
-		    <?php the_content(); ?>
-		  </li>
-	    <?php endwhile; ?>  
-	  </ul>
-  </div>
 
 <?php
-  endif;
-  get_footer();
+  get_header();
+  
 ?>
+
+	<div class='main-section'>
+	<?php get_sidebar(); ?>
+	  <ul class="posts">
+		<?php 
+		  if ( have_posts() ) :
+	      	while ( have_posts() ) : the_post();
+		?>      
+	    <li>		    
+		  <?php the_content(); ?>
+		</li>
+		<?php 
+			endwhile;
+			endif;
+		?>
+	  </ul>
+	</div>
+
+<?php get_footer(); ?>

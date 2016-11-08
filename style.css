@@ -1,3 +1,4 @@
+
 /*	Theme Name: 	Setupshop
    	Theme URI: 		http://localhost/Setupshop/
    	Author: 		Lelethu Godongwana
@@ -7,7 +8,10 @@
    	Tag: 			black, white, responsive, two-columns, three-columns, 
    	     			featured-images, custom-menu, custom-header, post-formats
 */
-
+html, body, p {
+  margin: 0;
+  padding: 0;
+}
 html {
    font-size: 62.5%;
    height: 100%;
@@ -17,23 +21,9 @@ body {
    font-size: 2rem;
    font-family: 'Open Sans', sans-serif;
    background-image: url('images/print011.jpg');
+   background-repeat: none;
    opacity: 0.9;
-}
-
-.page-id-2 {
-   background-image: url('images/back004.jpg');
-}
-
-.page-id-5 {
-   background-image: url('images/back005.jpg');
-}
-
-.page-id-9 {
-   background-image: url('images/back008.jpg');
-}
-
-.page-id-7 {
-   background-image: url('images/back001.jpg');
+   box-sizing: border-box;
 }
 
 .site-header {
@@ -72,8 +62,9 @@ a {
 }
 
 .menu ul {
-   margin: 0.2rem 1rem 2rem 0;
+   margin: 0 1rem 2rem 0;
    padding: 0 4rem 2rem 0;
+   list-style-type: none;
 }
 
 .menu li {
@@ -87,6 +78,7 @@ a {
    height: 1.5rem;
    width: auto;
    padding-right: 1rem;
+   list-style-type: none;
 }
 
 #sidebar h2 {
@@ -97,11 +89,11 @@ a {
    opacity: 1;
    background-color: #FFFFAA;
    color: #555555;
-   padding: 2rem 0;
+   padding: 4rem 0;
    overflow: none;
    font-size: 1.25rem;
-   width: 37rem;
-   margin: 12.5rem 0 4rem 4rem;
+   width: 33%;
+   margin: 10rem 0 4rem;
    float: left;
 }
 
@@ -120,33 +112,30 @@ a {
    color: #555555;
 }
 
-.post-section ul li {
+p {
    font-family: 'Open Sans', sans-serif;
-   display: inline;
-   list-style-type: none;
-   margin-bottom: 10rem;
    padding: 4rem;
-}
-
-.post-section ul {
-   overflow: auto;
-   list-style-type: none;
-   text-decoration: none;
-   overflow: hidden;
-   background-color: #fff;
-   margin: 12.5rem 4rem 0 0;
-   padding-right: 4rem;
-   width: 50%;
    font-size: 1.5rem;
    color: #555555;
-   float: right;
-   border-bottom: 1px solid #dfdfdf;
 }
 
-.single-post p {
-  /*margin: 4rem 0;*/
-  padding: 4rem;
-  border-bottom: .1rem solid #555555;
+.main-section {
+  padding: 0 5.6rem 0 4rem;
+}
+
+.posts {
+  display: block;
+  width: 66%;
+  margin-left: 1%;
+  float: left;
+  padding: 0;
+  margin-top: 10rem;
+}
+
+.posts li {
+  list-style: none;
+  background-color: #fff;
+  margin-bottom: 2rem;
 }
 
 /*footer {
@@ -159,39 +148,3 @@ footer p {
    padding: 2rem;
    color: #000;
 }*/
-
-.read-more-state {
-  display: none;
-}
-
-.read-more-target {
-  opacity: 0;
-  max-height: 0;
-  font-size: 0;
-  transition: .25s ease;
-}
-
-.read-more-state:checked ~ .read-more-wrap span.read-more-target {
-  opacity: 1;
-  font-size: inherit;
-  max-height: 2rem;
-}
-
-.read-more-state ~ .read-more-trigger:before {
-  content: 'Show more';
-}
-
-.read-more-state:checked ~ .read-more-trigger:before {
-  content: 'Show less';
-}
-
-.read-more-trigger {
-  cursor: pointer;
-  display: inline-block;
-  padding: 0.1rem 2rem;
-  color: #000;
-  font-size: inherit;
-  border: 1px solid #dfdfdf;
-  border-radius: 0.5rem;
-  background-color: #0EBFE9;
-}
