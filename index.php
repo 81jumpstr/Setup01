@@ -1,8 +1,4 @@
-
-<?php
-  get_header();
-  
-?>
+<?php get_header(); ?>
 
 	<div class='main-section'>
 	<?php get_sidebar(); ?>
@@ -11,8 +7,9 @@
 		  if ( have_posts() ) :
 	      	while ( have_posts() ) : the_post();
 		?>      
-	    <li>		    
-		  <?php the_content(); ?>
+	    <li>
+
+		  <?php the_content('&raquo;'); ?>
 		</li>
 		<?php 
 			endwhile;
