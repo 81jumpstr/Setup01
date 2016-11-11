@@ -35,3 +35,10 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 ?>
+
+<!-- adding and sizing - posts with thumbnails -->
+
+<?php
+  add_theme_support( 'post-thumbnails' );
+  set_post_thumbnail_size( 100, 50, true );
+?>
