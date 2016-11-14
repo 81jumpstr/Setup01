@@ -147,6 +147,7 @@ p {
   list-style: none;
   background-color: #fff;
   margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .posts ul {
@@ -154,26 +155,63 @@ p {
   opacity: 0.9;
 }
 
+.posts h3 {
+  padding-left: 4rem;
+}
+
 .left-content {
   font-size: 1.5rem;
   padding: 4rem;
 }
 
-/*footer {
-   width: auto !important;
-}
-
-footer p {
+.footer {
+   margin: 0 4rem;
+   float: left;
+   position: relative;
+   width: 92.9%;
    background-color: #C1CDCD;
-   height: 20rem;
-   padding: 2rem;
-   color: #000;
+   text-align: center;
 }
 
-.relatedposts {width: 640px; margin: 0 0 20px 0; float: left; font-size: 12px;}
-.relatedposts h3 {font-size: 20px; margin: 0 0 5px 0; }
-.relatedthumb {margin: 0 1px 0 1px; float: left; }
-.relatedthumb img {margin: 0 0 3px 0; padding: 0;}
-.relatedthumb a {color :#333; text-decoration: none; display:block; padding: 4px; width: 150px;}
-.relatedthumb a:hover {background-color: #ddd; color: #000;}
-*/
+.footer p {
+   height: 5rem;
+   color: #000;
+   text-align: center;
+   font-style: italic;
+   padding: 0;
+}
+
+.footer ul {
+  padding-left: 0;
+}
+
+.footer li {
+  display: inline-block;
+}
+
+.footer-icons a {
+   opacity: 0.6;
+   transition: opacity 0.5s;
+}
+
+.footer-icons a:hover {
+  opacity: 1;
+}
+
+.footer .footer-icons {
+   margin-left: 2.5rem;
+}
+
+.footer .footer-icons:first-child {
+  margin-left: 0;
+}
+
+.footer-icons a img {
+   padding-top: 2rem;
+   width: 3.4rem;
+   height: 3.4rem;
+}
+
+.post-categories a {
+   display: none;
+}
