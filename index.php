@@ -8,7 +8,6 @@
 	      	while ( have_posts() ) : the_post();
 		?>      
 	    <li>
-
 		  <?php the_content('&raquo;'); ?>
 		</li>
 		<?php 
