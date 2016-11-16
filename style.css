@@ -1,3 +1,4 @@
+
 /*	Theme Name: 	Setupshop
    	Theme URI: 		http://localhost/Setupshop/
    	Author: 		Lelethu Godongwana
@@ -7,7 +8,10 @@
    	Tag: 			black, white, responsive, two-columns, three-columns, 
    	     			featured-images, custom-menu, custom-header, post-formats
 */
-
+html, body, p {
+  margin: 0;
+  padding: 0;
+}
 html {
    font-size: 62.5%;
    height: 100%;
@@ -15,32 +19,36 @@ html {
 
 body {
    font-size: 2rem;
-   background-color: #EEEEE0;
    font-family: 'Open Sans', sans-serif;
+   background-image: url('images/print011.jpg');
+   background-repeat: none;
+   opacity: 0.9;
+   box-sizing: border-box;
 }
 
-header.site-header {
+.site-header {
    background-color: #fff;
-   position: relative;
-   width: 100%;
+   position: fixed;
+   width: 92.9%;
    height: 8rem;
+   margin: 0 4rem;
 }
 
 .site-header h1 {
-   float: left !important;
-   font-family: 'Over the Rainbow' !important;
-   color: #1E90FF !important;
+   float: left;
+   font-family: 'Over the Rainbow';
+   color: #1E90FF;
    position: relative;
-   height: 0 auto !important;
-   width: 0 auto !important;
+   width: 0 auto;
    margin-left: 1rem;
    padding-left: 3rem;
-   font-size: 2rem !important;
+   font-size: 2rem;
 }
 
 a {
    list-style-type: none;
    text-decoration: none;
+   display: inline-block;
 }
 
 .menu li a:hover {
@@ -50,27 +58,27 @@ a {
 }
 
 .menu li a {
-   color: #555555;
+   color: #000;
 }
 
 .menu ul {
-   margin: 0 2rem;
-
+   margin: 0 1rem 2rem 0;
+   padding: 0 4rem 2rem 0;
+   list-style-type: none;
 }
 
 .menu li {
-   padding: 1rem 3rem;
+   padding: 1rem 4rem;
    list-style-type: none;
    text-decoration: none;
    float: right;
    display: inline;
    font-size: 1.5rem;
    margin-top: 1.8rem;
-   height: 1.5rem !important;
-   width: auto !important;
-   /*border-left: 1px solid #dfdfdf;*/
-   padding: 2rem
-   background-color: #8B8989;
+   height: 1.5rem;
+   width: auto;
+   padding-right: 1rem;
+   list-style-type: none;
 }
 
 #sidebar h2 {
@@ -78,13 +86,14 @@ a {
 }
 
 #sidebar {
+   opacity: 1;
    background-color: #FFFFAA;
    color: #555555;
-   padding: 2rem 0;
+   padding: 4rem 0;
    overflow: none;
    font-size: 1.25rem;
-   width: 37rem !important;
-   margin: 12rem 0 4rem 4rem;
+   width: 33%;
+   margin: 2rem 0 4rem;
    float: left;
 }
 
@@ -100,73 +109,109 @@ a {
 #sidebar li a {
    background-size: 2rem;
    padding: 0.5rem;
-   color: #555555;;
+   color: #555555;
 }
 
-ul li {
+p {
    font-family: 'Open Sans', sans-serif;
-   display: inline;
-   list-style-type: none;
-}
-
-ul li p {
-   list-style-type: none;
-   text-decoration: none;
-   overflow: hidden;
-   background-color: #fff;
-   padding: 6rem;
-   margin: 12rem 4rem 0 0;
-   width: 50%;
+   padding: 4rem;
    font-size: 1.5rem;
    color: #555555;
-   float: right;
-   border-bottom: 1px solid #dfdfdf;
-   /*margin-right: 4rem !important;*/
 }
 
-/*footer {
-   width: auto !important;
+.main-section {
+  padding: 0 5.6rem 0 4rem;
 }
 
-footer p {
+.entry-title {
+  margin-top: 0;
+  padding: 4rem 0 0 4rem;
+}
+
+.post {
+  background-color: #fff;
+  opacity: 0.9;
+  margin-top: 0;
+}
+
+.posts {
+  display: block;
+  width: 66%;
+  margin-left: 1%;
+  float: left;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.posts li {
+  list-style: none;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.posts ul {
+  background-color: #fff;
+  opacity: 0.9;
+}
+
+.posts h3 {
+  padding-left: 4rem;
+}
+
+.left-content {
+  font-size: 1.5rem;
+  padding: 4rem;
+}
+
+.footer {
+   margin: 0 4rem;
+   float: left;
+   position: relative;
+   width: 92.9%;
    background-color: #C1CDCD;
-   height: 20rem;
-   padding: 2rem;
+   text-align: center;
+}
+
+.footer p {
+   height: 5rem;
    color: #000;
-}*/
-
-.read-more-state {
-  display: none;
+   text-align: center;
+   font-style: italic;
+   padding: 0;
 }
 
-span.read-more-target {
-  opacity: 0;
-  max-height: 0;
-  font-size: 0;
-  transition: .25s ease;
+.footer ul {
+  padding-left: 0;
 }
 
-.read-more-state:checked ~ .read-more-wrap span.read-more-target {
-  opacity: 1;
-  font-size: inherit;
-  max-height: 2rem;
-}
-
-.read-more-state ~ .read-more-trigger:before {
-  content: 'Show more';
-}
-
-.read-more-state:checked ~ .read-more-trigger:before {
-  content: 'Show less';
-}
-
-label.read-more-trigger {
-  cursor: pointer;
+.footer li {
   display: inline-block;
-  padding: .1rem 2rem;
-  color: #000;
-  font-size: inherit;
-  border: 1px solid #dfdfdf;
-  border-radius: .5rem;
-  background-color: #0EBFE9;
+}
+
+.footer-icons a {
+   opacity: 0.6;
+   transition: opacity 0.5s;
+}
+
+.footer-icons a:hover {
+  opacity: 1;
+}
+
+.footer .footer-icons {
+   margin-left: 2.5rem;
+}
+
+.footer .footer-icons:first-child {
+  margin-left: 0;
+}
+
+.footer-icons a img {
+   padding-top: 2rem;
+   width: 3.4rem;
+   height: 3.4rem;
+}
+
+.post-categories a {
+   display: none;
 }
