@@ -1,10 +1,9 @@
 <?php 
-  function Setupshop_script_enqueue() {
+  function setupshop_script_enqueue() {
     wp_enqueue_style('customstyle', get_stylesheet_directory_uri() . "/style.css", array(), '1.0.0');
     wp_enqueue_script('customjs', get_stylesheet_directory_uri() . "/js/setupshop.js", array(), '1.0.0', true);
-
-  }
-  add_action('wp_enqueue_scripts', 'Setupshop_script_enqueue');
+}
+add_action('wp_enqueue_scripts', 'setupshop_script_enqueue');
 ?>
 
 <?php
@@ -12,7 +11,7 @@
 *         Register sidebars and widgetized areas.
 *
 */
-function arphabet_widgets_init() {
+function widgets_init() {
   register_sidebar( array(
   	'name'          => 'Filters',
   	'id'            => 'filter',
@@ -21,14 +20,14 @@ function arphabet_widgets_init() {
   	'before_title'  => '<h2 class="rounded">',
   	'after_title'   => '</h2>', ) );
 }
-  add_action( 'widgets_init', 'arphabet_widgets_init' );
+add_action( 'widgets_init' );
 ?>
 
 <?php
 function register_my_menu() {
   register_nav_menu('header-menu',__( 'Header Menu' ));
 }
-  add_action( 'init', 'register_my_menu' );
+add_action( 'init', 'register_my_menu' );
 ?>
 
 <!-- adding and sizing - posts with thumbnails -->
