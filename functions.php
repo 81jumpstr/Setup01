@@ -1,32 +1,26 @@
 <?php 
-  function Setupshop_script_enqueue() {
+  function setupshop_script_enqueue() {
     wp_enqueue_style('customstyle', get_stylesheet_directory_uri() . "/style.css", array(), '1.0.0');
     wp_enqueue_script('customjs', get_stylesheet_directory_uri() . "/js/setupshop.js", array(), '1.0.0', true);
-
-  }
-  add_action('wp_enqueue_scripts', 'Setupshop_script_enqueue');
-
+}
+add_action('wp_enqueue_scripts', 'setupshop_script_enqueue');
 ?>
 
 <?php
-
-  /**  ------- my additions below --------
-  * Register our sidebars and widgetized areas.
-  *
-  */
-  function arphabet_widgets_init() {
-
-	register_sidebar( array(
-		'name'          => 'Filters',
-		'id'            => 'filter',
-		'before_widget' => '<div>',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="rounded">',
-		'after_title'   => '</h2>',
-	) );
-
-  }
-  add_action( 'widgets_init', 'arphabet_widgets_init' );
+/**       ------- my additions below --------
+*         Register sidebars and widgetized areas.
+*
+*/
+function widgets_init() {
+  register_sidebar( array(
+  	'name'          => 'Filters',
+  	'id'            => 'filter',
+  	'before_widget' => '<div>',
+  	'after_widget'  => '</div>',
+  	'before_title'  => '<h2 class="rounded">',
+  	'after_title'   => '</h2>', ) );
+}
+add_action( 'widgets_init' );
 ?>
 
 <?php
@@ -39,9 +33,9 @@ add_action( 'init', 'register_my_menu' );
 <!-- adding and sizing - posts with thumbnails -->
 
 <?php
-  add_action('init', 'setupshop_theme_init');
-  function setupshop_theme_init() {
-  add_theme_support( 'post-thumbnails' ); 
+add_action('init', 'setupshop_theme_init');
+function setupshop_theme_init() {
+  add_theme_support( 'post-thumbnails' );
   set_post_thumbnail_size( 100, 50, true );
-} 
+}
 ?>
