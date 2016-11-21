@@ -216,28 +216,14 @@ p {
    display: none;
 }
 
-.page .post-5 {
+.page .type-page {
    background-color: #F7F7F7;
    padding-top: 2rem;
    margin-top: 8rem;
 }
 
-.page .post-2 {
-   background-color: #F7F7F7;
-   padding-top: 2rem;
-   margin-top: 8rem;
-}
-
-.page .post-9 {
-   background-color: #F7F7F7;
-   padding-top: 2rem;
-   margin-top: 8rem;
-}
-
-.page .post-7 {
-   background-color: #F7F7F7;
-   padding-top: 2rem;
-   margin-top: 8rem;
+.type-page h2 {
+   padding: 4rem;
 }
 
 .entry-title {
@@ -246,4 +232,9 @@ p {
 
 .article {
     background-color: #F7F7F7;
+    padding: 4rem;
+}
+
+.thumbnails {
+  margin-left: 4rem;
 }

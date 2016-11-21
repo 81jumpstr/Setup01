@@ -1,12 +1,3 @@
-<?php 
-
-/* 
- *		Template Name: Custom Page
- *		Description: No Sidebar
- */
-
-?>
-
 <?php get_header(); ?>
 
 	<div class='main-section'>
