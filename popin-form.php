@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<form>
+<form action="poppin-page.php" method="post">
   <div class="poppin-namesurname">
 	  <p>First name:<br /></p>
 	  <input type="text" name="firstname">
