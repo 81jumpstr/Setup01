@@ -216,14 +216,14 @@ p {
    display: none;
 }
 
-.page .type-page {
+.type-page {
    background-color: #F7F7F7;
    padding-top: 2rem;
    margin-top: 8rem;
 }
 
 .type-page h2 {
-   padding: 4rem;
+   padding: 0 4rem;
 }
 
 .entry-title {
@@ -236,5 +236,5 @@ p {
 }
 
 .thumbnails {
-  margin-left: 4rem;
+  margin: 4rem;
 }
