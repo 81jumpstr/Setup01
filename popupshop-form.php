@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<form>
+<form action="popupshop-page.php" method="post">
   <div class="popupshop-name">
 	  <p>Business / Project Name:<br /></p>
 	  <input type="text" name="name">
