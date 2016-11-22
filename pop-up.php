@@ -1,3 +1,10 @@
+<?php 
+/*
+ *		Template Name: Custom Pop-up
+ *		Description: Call to Action
+ */
+?>
+
 <?php get_header(); ?>
 
 	<div class='main-section'>
@@ -12,18 +19,17 @@
 
 		<?php the_title('<h1 class="entry-title">','</h1>' ); ?>
 
-		<?php if( has_post_thumbnail() ): ?>
-			<div class="thumbnails">
-				<?php the_post_thumbnail('thumbnail'); ?>
-			</div>
-		<?php endif; ?>
-
 		<small>
 			<?php the_category(); ?>
 		</small>
 
 		<div>
 		  <?php the_content(); ?>
+		  <h3>Sign Up: </h3>
+		  <button href="#" class="intervention">Events</button>
+		  <button href="#" class="workshop">Setupshop</button>
+		  <br />
+		  <br />
 		</div>
 
 		<?php 
