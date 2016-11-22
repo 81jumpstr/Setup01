@@ -1,30 +1,31 @@
 <?php get_header(); ?>
 
-<form>
-  <div class="popupshop-name">
-	  <p>Business / Project Name:<br /></p>
-	  <input type="text" name="name">
-	  <br />
-	  <p>Specialize in:<br /></p>
+<form action="popupshop-action-page.php" class="popupshop-form" method="post">
+  <ul class="form-details">
+    <li>
+	  <label for="bizprojectname">Business / Project Name:</label>
+	  <input type="text" name="bizprojectname">
+	</li>
+	<li>  
+	  <label for="specialize-in">Specialize in:</label>
 	  <input type="text" name="specialize-in">
-	  <br>
-  </div>
+    </li>
+  </ul>
 
-  <div class="poppupshop-radios">
-	  <input type="radio" name="discription" value="project"> Project<br />
-	  <input type="radio" name="discription" value="business"> Business<br />
-  	  <br />
+  <div class="popupshop-radios">
+	<input type="radio" name="description" value="project"> Project
+	<input type="radio" name="description" value="business"> Business
   </div>
   
-  <div class="outline">
-	  <p>Outline:<br /></p>
-	  <br />
-	  <input class="text-box" type="text" alt="Tell us more about the specifics of your event's short-term, mid-term, long-term goals and the general objectives. Please apply the SMART method..."><br />
-	  <br />
-  </div>
+  <ul class="form-details">
+    <li>
+	  <label for="outline">Outline:</label>
+	  <textarea class="outline" type="text" alt="Tell us more about the specifics of your event's short-term, mid-term, long-term goals and the general objectives. Please apply the SMART method...">
+	  </textarea>
+	</li>
+  </ul>
 
   <input class="popupshop-submit" type="submit" value="Submit">
-  <br />
 
 </form>
 
