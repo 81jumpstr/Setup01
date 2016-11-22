@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<form action="popin-page.php" method="post" class="popin-form">
+<form action="" method="post" class="form" "popin-form">
   <ul class="form-fields">
     <li>
       <label for="firstname">First Name:</label>
@@ -24,9 +24,9 @@
 
   <ul class="form-fields">
     <li >
-	  <label class="outline" for="outline">Outline:</label>
-	  <textarea class="outline-box" name="outline">Tell us more about the specifics of your event's short-term, mid-term, long-term goals and the general objective.
-	  </textarea>
+	    <label class="outline" for="outline">Outline:</label>
+	    <textarea class="outline-box" name="outline">Tell us more about the specifics of your event's short-term, mid-term, long-term goals and the general objective.
+	    </textarea>
     </li>
   </ul>
 
