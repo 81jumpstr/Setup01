@@ -215,3 +215,26 @@ p {
 .post-categories a {
    display: none;
 }
+
+.type-page {
+   background-color: #F7F7F7;
+   padding-top: 2rem;
+   margin-top: 8rem;
+}
+
+.type-page h2 {
+   padding: 0 4rem;
+}
+
+.entry-title {
+   font-family: 'Varela', sans-serif;
+}
+
+.article {
+    background-color: #F7F7F7;
+    padding: 4rem;
+}
+
+.thumbnails {
+  margin: 4rem;
+}
