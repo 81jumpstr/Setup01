@@ -28,8 +28,6 @@
 		  <h3>Sign Up: </h3>
 		  <button href="#" class="intervention">Events</button>
 		  <button href="#" class="workshop">Setupshop</button>
-		  <br />
-		  <br />
 		</div>
 
 		<?php 
