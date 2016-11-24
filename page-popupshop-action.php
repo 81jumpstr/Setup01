@@ -1,3 +1,9 @@
+<?php 
+/*
+ *    Advised; won't work, will revisit
+ */
+?>
+
 <?php get_header(); ?>
 
 	<div class='main-section'>

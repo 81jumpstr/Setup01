@@ -1,6 +1,6 @@
 <?php 
 /*
- *		Template Name: Custom Pop-up
+ *		Template Name: Page-Popupshop
  *		Description: Call to Action
  */
 ?>
