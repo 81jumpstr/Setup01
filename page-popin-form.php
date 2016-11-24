@@ -13,13 +13,9 @@
   </ul>  
 
   <div class="popin-radios">
-    <ul>
-      <li>
-        <input type="radio" name="gender" value="male"> Male<br />
-        <input type="radio" name="gender" value="female"> Female<br />
-        <input type="radio" name="gender" value="other"> Other<br />
-      </li>
-    </ul>
+    <input type="radio" name="gender" value="male"> Male<br />
+    <input type="radio" name="gender" value="female"> Female<br />
+    <input type="radio" name="gender" value="other"> Other<br />
   </div>
 
   <ul class="form-fields">
