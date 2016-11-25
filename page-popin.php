@@ -1,6 +1,7 @@
 <?php 
 /*
- *    Advised; won't work, will revisit
+ *    Template Name: Page-Popin
+ *    Description: Call-to-Action
  */
 ?>
 

@@ -1,3 +1,10 @@
+<?php 
+/*
+ *    Template Name: Page-Popin-form
+ *    Description: Call-to-Action
+ */
+?>
+
 <?php get_header(); ?>
 
 <form action="" method="post" class="form" "popin-form">
