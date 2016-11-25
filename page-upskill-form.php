@@ -1,19 +1,19 @@
 <?php get_header(); ?>
 
 <form>
-  <h1>1UP</h1>
-  <ul class="1up-details">
+  <h1>UPSKILL</h1>
+  <ul class="upskill-details">
     <li>
-	    <label for="bizprojectname">Business/Project Name:</label>
-	    <input type="text" name="bizprojectname">
-	  </li>
-	  <li>  
-	    <label for="url">Website:</label>
-	    <input type="text" name="website">
+      <label for="bizprojectname">Business/Project Name:</label>
+      <input type="text" name="bizprojectname">
     </li>
     <li>  
-	    <label for="url">Demoable Website:</label>
-	    <input type="text" name="demosite">
+      <label for="url">Website:</label>
+      <input type="text" name="website">
+    </li>
+    <li>  
+      <label for="url">Demoable Website:</label>
+      <input type="text" name="demosite">
     </li>
     <li>
       <label for="firstname">Contact First Name:</label>
