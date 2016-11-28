@@ -9,12 +9,12 @@
         </li>
         <li class="footer-icons">
           <a href="https://www.twitter.com">
-					  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/setupshop_fttwitter1.png" />
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/setupshop_fttwitter1.png" />
           </a>
         </li>
         <li class="footer-icons">
           <a href="https://www.linkedin.com">
-					  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/setupshop_ftlinkedin.ico" />
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/setupshop_ftlinkedin.ico" />
           </a>
         </li>
         <li class="footer-icons">
