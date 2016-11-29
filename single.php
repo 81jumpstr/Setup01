@@ -19,13 +19,9 @@
           <small>
             <?php the_category(); ?>
           </small>
-          <div>
-            <ul class="posts">
-              <li>
-                <?php the_content(); ?>
-              </li>
-            </ul>
-          </div>
+
+          <?php the_content(); ?>
+
     <?php 
         endwhile;
       endif;
