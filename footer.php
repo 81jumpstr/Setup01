@@ -28,7 +28,7 @@
           </a>
         </li>
       </ul>
-        <p>Copyright &copy; 2016 elGodzCreations. Powered by Nona Creative &reg;. All rights reserved.</p>
+      <p>Copyright &copy; 2016 elGodzCreations. Powered by Nona Creative &reg;. All rights reserved.</p>
         
     </footer>
 
