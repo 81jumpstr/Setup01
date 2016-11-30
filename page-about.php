@@ -28,6 +28,7 @@
           </small>
 
           <?php the_content(); ?>
+
     <?php 
         endwhile;
       endif;
