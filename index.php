@@ -2,19 +2,23 @@
 
   <div class='main-section'>
     <?php get_sidebar(); ?>
-    <ul class="posts">
-      <?php 
-        if ( have_posts() ) :
-          while ( have_posts() ) : the_post();
+    <?php 
+      if ( have_posts() ) :
+    ?>
+        <ul class="posts">
+      <?php
+        while ( have_posts() ) : the_post();
       ?>
-      <li>
-        <?php the_content('&raquo;'); ?>
-      </li>
+        <li>
+          <?php the_content('&raquo;'); ?>
+        </li>
       <?php 
-          endwhile;
-        endif;
+        endwhile;
       ?>
-    </ul>
+        </ul>
+    <?php
+      endif;
+    ?>
   </div>
 
 <?php get_footer(); ?>
