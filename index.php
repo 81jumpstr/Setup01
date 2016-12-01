@@ -9,9 +9,9 @@
       <?php
         while ( have_posts() ) : the_post();
       ?>
-        <li>
-          <?php the_content('&raquo;'); ?>
-        </li>
+          <li>
+            <?php the_content('&raquo;'); ?>
+          </li>
       <?php 
         endwhile;
       ?>
