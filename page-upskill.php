@@ -10,13 +10,9 @@
   <div class='main-section'>
     <?php 
       if ( have_posts() ) :
-    ?>
-        <ul class="posts">
-      <?php
         while ( have_posts() ) : the_post();
           get_template_part( 'content', 'page' );
-      ?>
-
+    ?>
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
           <?php the_title('<h1 class="entry-title">','</h1>' ); ?>
@@ -30,18 +26,15 @@
           <small>
             <?php the_category(); ?>
           </small>
-
-          <li>
-            <?php the_content(); ?>
-          </li>
-
-		<?php 
+          <ul class="posts">
+            <li>
+              <?php the_content(); ?>
+            </li>
+          </ul>
+    <?php 
 			  endwhile;
+      endif;
     ?>
-        </ul>
-    <?php
-			endif;
-		?>
-	</div>
+  </div>
 
 <?php get_footer(); ?>
