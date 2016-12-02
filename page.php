@@ -27,9 +27,7 @@
             <?php the_category(); ?>
           </small>
 
-            <li>
-              <?php the_content(); ?>
-            </li>
+          <?php the_content(); ?>
 
       <?php 
         endwhile;
