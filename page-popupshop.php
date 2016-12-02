@@ -7,10 +7,12 @@
 
 <?php get_header(); ?>
 
-	<div class='main-section'>
-	  <ul class="posts">
+  <div class='main-section'>
 		<?php 
-		  if ( have_posts() ) :
+      if ( have_posts() ) :
+    ?>
+        <ul class="posts">
+      <?php
 	      while ( have_posts() ) : the_post();
 			get_template_part( 'content', 'page' );
 		?>
