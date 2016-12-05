@@ -10,7 +10,16 @@
   <div class='main-section'>
     <?php 
       if ( have_posts() ) :
+    ?>
+        <ul class="posts">    
+      <?php
         while ( have_posts() ) : the_post();
+      ?>
+          <li>
+            <?php the_content(); ?>
+          </li>
+        </ul>
+      <?php
           get_template_part( 'content', 'page' );
       ?>
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -26,12 +35,6 @@
           <small>
             <?php the_category(); ?>
           </small>
-          
-          <ul class="posts">
-            <li>
-              <?php the_content(); ?>
-            </li>
-          </ul>
     <?php 
 			  endwhile;
       endif;
