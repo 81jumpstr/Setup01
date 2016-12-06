@@ -9,15 +9,12 @@
 
   <div class="main-section">
     <?php 
-      if ( have_posts() ) : ?>
-      	<ul class="posts">           
+      if ( have_posts() ) : ?>           
       <?php 
         while ( have_posts() ) : the_post(); 
       ?>
-          <li>
             <?php the_title('<h1 class="entry-title">','</h1>' ); ?>
             <article <?php post_class(); ?>>
-            <?php get_template_part( 'content', 'page' ); ?>
 
     <?php if( has_post_thumbnail() ): ?>
             <div class="thumbnails">
@@ -30,12 +27,8 @@
             </small>
 
             <?php the_content(); ?>
-          </li>
-      <?php
-        endwhile;
-      ?>
-        </ul>
     <?php
+        endwhile;
       endif;
     ?>
   </div>
