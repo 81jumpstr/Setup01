@@ -7,7 +7,6 @@
         <ul class="posts">
       <?php
         while ( have_posts() ) : the_post();
-          get_template_part( 'content', 'page' );
       ?>
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -22,7 +21,6 @@
         <?php 
           endif; 
         ?>
-
           <small>
             <?php the_category(); ?>
           </small>
@@ -32,7 +30,6 @@
       <?php 
         endwhile;
       ?>
-
         </ul>
     <?php
       endif;
