@@ -8,35 +8,36 @@
 <?php get_header(); ?>
 
   <div class='main-section'>
-		<?php 
+    <?php 
       if ( have_posts() ) :
     ?>
         <ul class="posts">
       <?php
-	      while ( have_posts() ) : the_post();
-			get_template_part( 'content', 'page' );
-		?>
+        while ( have_posts() ) : the_post();
+      ?>
+          <li>
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <?php the_title('<h1 class="entry-title">','</h1>' ); ?>
 
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <small>
+              <?php the_category(); ?>
+            </small>
 
-		<?php the_title('<h1 class="entry-title">','</h1>' ); ?>
+            <div>
+              <?php the_content(); ?>
+              <h3>Sign Up: </h3>
+              <button href="#" class="intervention">Events</button>
+              <button href="#" class="workshop">Setupshop</button>
+            </div>
+          </li>
+      <?php 
+        endwhile;
+      ?>
+        </ul>
+    <?php
+      endif;
+    ?>
 
-		<small>
-			<?php the_category(); ?>
-		</small>
-
-		<div>
-		  <?php the_content(); ?>
-		  <h3>Sign Up: </h3>
-		  <button href="#" class="intervention">Events</button>
-		  <button href="#" class="workshop">Setupshop</button>
-		</div>
-
-		<?php 
-			endwhile;
-			endif;
-		?>
-	  </ul>
 	</div>
 
 <?php get_footer(); ?>
