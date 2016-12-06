@@ -15,8 +15,7 @@
         while ( have_posts() ) : the_post(); 
       ?>
           <li>  
-            <?php the_title('<h1 class="entry-title">','</h1>' ); ?>
-            <article <?php post_class(); ?>>
+            <article <?php the_title('<h1 class="entry-title">','</h1>' ); post_class(); ?>>
 
     <?php if( has_post_thumbnail() ): ?>
             <div class="thumbnails">
