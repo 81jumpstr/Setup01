@@ -9,10 +9,12 @@
 
   <div class="main-section">
     <?php 
-      if ( have_posts() ) : ?>           
+      if ( have_posts() ) : ?>
+      	<ul class="posts">           
       <?php 
         while ( have_posts() ) : the_post(); 
       ?>
+          <li>  
             <?php the_title('<h1 class="entry-title">','</h1>' ); ?>
             <article <?php post_class(); ?>>
 
@@ -27,8 +29,12 @@
             </small>
 
             <?php the_content(); ?>
-    <?php
+          </li>
+      <?php
         endwhile;
+      ?>
+        </ul>
+    <?php
       endif;
     ?>
   </div>
