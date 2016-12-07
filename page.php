@@ -18,6 +18,7 @@
         <?php 
           endif; 
         ?>
+        
           <small>
             <?php the_category(); ?>
           </small>
