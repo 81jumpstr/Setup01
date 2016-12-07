@@ -1,7 +1,7 @@
 <?php 
 /*
  *    Template Name: Page-About
- *    Description: About site and Contacts Us, combined
+ *    Description: About site, Contacts Us, the Team combined
  */
 ?>
 
@@ -24,10 +24,69 @@
         <?php 
           endif; 
         ?>
-
+        
         <small>
           <?php the_category(); ?>
         </small>
+
+          <div class="team">
+            <ul>
+              <div class="tmember01">
+                <li>
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tmember06.jpg" alt="contacts-image01">
+                  <p>Name:</p>
+                  <p>Porfolio:</p>
+                  <p>Quote:</p>
+                  <hr>
+                </li>
+              </div>
+              <div class="tmember02">
+                <li>
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tmember05.jpg" alt="contacts-image02">
+                  <p>Name:</p>
+                  <p>Porfolio:</p>
+                  <p>Quote:</p>
+                  <hr>
+                </li>
+              </div>
+              <div class="tmember03">
+                <li>
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tmember04.jpg" alt="contacts-image03">
+                  <p>Name:</p>
+                  <p>Porfolio:</p>
+                  <p>Quote:</p>
+                  <hr>
+                </li>
+              </div>
+              <div class="tmember04">
+                <li>
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tmember03.jpg" alt="contacts-image04">
+                  <p>Name:</p>
+                  <p>Porfolio:</p>
+                  <p>Quote:</p>
+                  <hr>
+                </li>
+              </div>
+              <div class="tmember05">
+                <li>
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tmember02.jpg" alt="contacts-image05">
+                  <p>Name:</p>
+                  <p>Porfolio:</p>
+                  <p>Quote:</p>
+                  <hr>
+                </li>
+              </div>
+              <div class="tmember06">
+                <li>
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tmember01.jpg" alt="contacts-image06">
+                  <p>Name:</p>
+                  <p>Porfolio:</p>
+                  <p>Quote:</p>
+                  <hr>
+                </li>
+              </div>
+            </ul>      
+          </div>
 
         <?php the_content(); ?>
 
