@@ -3,11 +3,8 @@
   <div class='main-section'>
     <?php 
       if ( have_posts() ) :
-    ?>
-        <ul class="posts">
-      <?php
         while ( have_posts() ) : the_post();
-      ?>
+    ?>
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
           <?php the_title('<h1 class="entry-title">','</h1>' ); ?>
@@ -27,11 +24,8 @@
 
           <?php the_content(); ?>
 
-      <?php 
+    <?php 
         endwhile;
-      ?>
-        </ul>
-    <?php
       endif;
     ?>
   </div>
