@@ -1,13 +1,14 @@
 <?php 
 /*
  *    Template Name: Page-About
- *    Description: About site, Contacts Us, the Team combined
+ *    Description: About site and Contacts Us, combined
  */
 ?>
 
 <?php get_header(); ?>
 
   <div class='main-section'>
+
     <?php 
       if ( have_posts() ) :
         while ( have_posts() ) : the_post();
@@ -67,7 +68,6 @@
                 <p>Quote:</p>
               </li>
             </ul>
-
             <?php the_content(); ?>
           </article>
     <?php 
