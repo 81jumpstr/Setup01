@@ -73,11 +73,11 @@
                 <a href="https://www.github.com">
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/github.png" alt="contacts-github-image" />
                 </a>
-            </li>
-          </ul>
-
+              </li>
+            </ul>
+            
+            <?php the_content(); ?>
           </article>
-          <?php the_content(); ?>
     <?php 
         endwhile;
       endif;
