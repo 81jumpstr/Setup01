@@ -10,13 +10,9 @@
   <div class='main-section'>
     <?php 
       if ( have_posts() ) :
-    ?>
-        <ul class="posts">
-      <?php
         while ( have_posts() ) : the_post();
-      ?>
-          <li>
-            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    ?>
+          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <?php the_title('<h1 class="entry-title">','</h1>' ); ?>
 
             <small>
@@ -29,15 +25,11 @@
               <button href="#" class="intervention">Events</button>
               <button href="#" class="workshop">Setupshop</button>
             </div>
-          </li>
-      <?php 
+          </article>
+    <?php 
         endwhile;
-      ?>
-        </ul>
-    <?php
       endif;
     ?>
-
 	</div>
 
 <?php get_footer(); ?>
