@@ -74,6 +74,53 @@
         endwhile;
       endif;
     ?>
+
+    <ul class="contacts-socialmedia">
+      <li>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tel.png" alt="contacts-tel-image" />
+        <p>Tel. #:</p>
+      </li>
+      <li>
+        <a href="https://www.gmail.com">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/email.png" alt="contacts-email-image" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook.png" alt="contacts-facebook-image" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.png" alt="contacts-twitter-image" />
+        </a>
+      </li>
+      <li class="contacts-linkedin">
+        <a href="https://www.linkedin.com">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/linkedin.png" alt="contacts-linkedin-image" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/instagram.png" alt="contacts-instagram-image" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/youtube.png" alt="contacts-youtube-image" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.google.com">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/gplus.png" alt="contacts-gplus-image" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.github.com">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/github.png" alt="contacts-github-image" />
+        </a>
+      </li>
+    </ul>
   </div>
 
 <?php get_footer(); ?>
