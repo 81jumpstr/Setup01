@@ -19,17 +19,16 @@
               <?php the_category(); ?>
             </small>
 
-            <div>
-              <?php the_content(); ?>
-              <h3>Sign Up: </h3>
-              <button href="#" class="intervention">Events</button>
-              <button href="#" class="workshop">Setupshop</button>
-            </div>
+            <?php the_content(); ?>
+
+            <h3>Sign Up: </h3>
+            <button href="#" class="intervention">Events</button>
+            <button href="#" class="workshop">Setupshop</button>
           </article>
     <?php 
         endwhile;
       endif;
     ?>
-	</div>
+  </div>
 
 <?php get_footer(); ?>
