@@ -29,7 +29,7 @@
               <?php the_category(); ?>
             </small>
 
-            <ul class="image-detailed">
+            <ul class="portfolio-column">
               <li>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tmember06.jpg" alt="contacts-image01">
                 <p>Name:</p>
