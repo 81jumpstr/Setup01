@@ -22,8 +22,10 @@
           <small>
             <?php the_category(); ?>
           </small>
-
-          <?php the_content(); ?>
+          
+          <div class="text">
+            <?php the_content(); ?>
+          </div>
 
     <?php 
         endwhile;
