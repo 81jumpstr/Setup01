@@ -238,3 +238,11 @@ p {
 .thumbnails {
   margin: 4rem;
 }
+
+.text {
+  -webkit-column-count: 3;
+}
+
+.contacts-socialmedia {
+  background-color: #F7F7F7;
+}
