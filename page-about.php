@@ -68,7 +68,9 @@
                 <p>Quote:</p>
               </li>
             </ul>
-            <?php the_content(); ?>
+            <div class="text">
+              <?php the_content(); ?>
+            </div>
           </article>
     <?php 
         endwhile;

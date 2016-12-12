@@ -14,12 +14,17 @@
               </div>
             <?php endif; ?>
         
-            <small>
-              <?php the_category(); ?>
-            </small>
 
+          <small>
+            <?php the_category(); ?>
+          </small>
+          
+          <div class="text">
             <?php the_content(); ?>
+          </div>
+
           </article>
+
 
     <?php 
         endwhile;
