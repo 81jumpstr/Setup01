@@ -12,20 +12,16 @@
               <div class="thumbnails">
                 <?php the_post_thumbnail('thumbnail'); ?>
               </div>
-            <?php endif; ?>
-        
+            <?php endif; ?>       
 
-          <small>
-            <?php the_category(); ?>
-          </small>
+            <small>
+              <?php the_category(); ?>
+            </small>
           
-          <div class="text">
-            <?php the_content(); ?>
-          </div>
-
+            <div class="text">
+              <?php the_content(); ?>
+            </div>
           </article>
-
-
     <?php 
         endwhile;
       endif;
