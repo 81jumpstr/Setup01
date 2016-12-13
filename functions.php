@@ -48,3 +48,20 @@ function setupshop_widgets_init() {
   	'after_title'   => '</h2>', ) );
 }
 ?>
+
+<?php 
+  add_post_meta( 5 , 'setupshop_interventions_focus' , 'education' , false ); 
+  add_post_meta( 5 , 'setupshop_interventions_focus' , 'health' , false );
+  add_post_meta( 5 , 'setupshop_interventions_focus' , 'games' , false );
+  
+
+  $projects_focus = get_post_meta( 5 , 'projects_focus' , false);
+
+  echo '<ul class="projects-focus">';
+
+  foreach ( $projects_focus as $focus ) {
+    echo '<li>' .$focus .'</li>';
+  }
+
+  echo '</ul>';
+?>
