@@ -12,7 +12,9 @@
     <?php 
       if ( have_posts() ) :
         while ( have_posts() ) : the_post();
-
+/*
+ *        Next code block Matt's assistance...
+ */
           $projects_focus = get_post_meta( get_the_ID() , 'projects_focus' , false);
           var_dump($projects_focus);
           $outputHtml = '<ul class="projects-focus">';
@@ -21,7 +23,7 @@
           }
           $outputHtml .= '</ul>';
 /*
- *        Next two lines, an exercise from Roy...Good!
+ *        Next two lines, my exercise/test from Roy. Excellent!
  */
           $wordpress_sucks = get_post_meta( get_the_ID() , 'wordpress_sucks' , false);
           var_dump($wordpress_sucks);
