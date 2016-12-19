@@ -13,20 +13,20 @@
       if ( have_posts() ) :
         while ( have_posts() ) : the_post();
 
-        // check if we have setupshop db fields
-        if (!get_post_meta( the_ID(), 'setupshop_interventions_focus', true)) {
-          add_post_meta( the_ID() , 'setupshop_interventions_focus' , 'education' , false ); 
-          add_post_meta( the_ID() , 'setupshop_interventions_focus' , 'health' , false );
-          add_post_meta( the_ID() , 'setupshop_interventions_focus' , 'games' , false );
-        }
+          $projects_focus = get_post_meta( get_the_ID() , 'projects_focus' , false);
+          var_dump($projects_focus);
+          $outputHtml = '<ul class="projects-focus">';
+          foreach ( $projects_focus as $focus ) {
+            $outputHtml .= '<li>' .$focus .'</li>';
+          }
+          $outputHtml .= '</ul>';
+/*
+ *        Next two lines, an exercise from Roy...Good!
+ */
+          $wordpress_sucks = get_post_meta( get_the_ID() , 'wordpress_sucks' , false);
+          var_dump($wordpress_sucks);
 
-        $projects_focus = get_post_meta( the_ID() , 'projects_focus' , false);
-        $outputHtml = '<ul class="projects-focus">';
-        foreach ( $projects_focus as $focus ) {
-          $outputHtml .= '<li>' .$focus .'</li>';
-        }
-        $outputHtml .= '</ul>';
-
+          echo $outputHtml;
     ?>
           <article <?php post_class(); ?>>
             <?php the_title('<h1 class="entry-title">','</h1>' ); ?>
@@ -86,7 +86,7 @@
             <div class="text">
               <?php the_content(); ?>
             </div>
-            <?php echo $outputHtml; ?>
+            
           </article>
     <?php 
         endwhile;
