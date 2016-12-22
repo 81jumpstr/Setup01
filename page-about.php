@@ -12,23 +12,6 @@
     <?php 
       if ( have_posts() ) :
         while ( have_posts() ) : the_post();
-/*
- *        Next code block Matt's assistance...
- */
-          $projects_focus = get_post_meta( get_the_ID() , 'projects_focus' , false);
-          var_dump($projects_focus);
-          $outputHtml = '<ul class="projects-focus">';
-          foreach ( $projects_focus as $focus ) {
-            $outputHtml .= '<li>' .$focus .'</li>';
-          }
-          $outputHtml .= '</ul>';
-/*
- *        Next two lines, my exercise/test from Roy. Excellent!
- */
-          $wordpress_sucks = get_post_meta( get_the_ID() , 'wordpress_sucks' , false);
-          var_dump($wordpress_sucks);
-
-          echo $outputHtml;
     ?>
           <article <?php post_class(); ?>>
             <?php the_title('<h1 class="entry-title">','</h1>' ); ?>
