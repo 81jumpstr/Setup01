@@ -33,10 +33,11 @@ function setupshop_script_enqueue() {
     );
 }
 
-/**       ------- my additions below --------
-*         Register sidebars and widgetized areas.
-*
-*/
+/*
+ *       ------- my additions below --------
+ *       Register sidebars and widgetized areas.
+ */
+
 add_action( 'widgets_init', 'setupshop_widgets_init' );
 function setupshop_widgets_init() {
   register_sidebar( array(
@@ -47,4 +48,9 @@ function setupshop_widgets_init() {
   	'before_title'  => '<h2 class="rounded">',
   	'after_title'   => '</h2>', ) );
 }
+
+function projects_metabox() {
+  add_meta_box( get_post_ID(), $projects, 'projects_metabox', get_post_meta(), 'normal', null );
+}
+
 ?>
